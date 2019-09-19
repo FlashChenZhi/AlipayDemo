@@ -1,0 +1,9 @@
+<view>
+  <view class="title">个人首页</view>
+  <view class="content">更多详情内容,请先
+  <navigator url="../user/register/register">注册</navigator>或
+  <navigator url="../user/login/login">登录</navigator>访问！</view>
+  <view class="advertisement">
+
+  </view>
+</view>

@@ -1,0 +1,40 @@
+<form>
+<view class="register">
+  <view style="margin-top:10px; text-align:center">
+    <view class="noticebar">欢迎进入注册页面</view>
+  </view>
+  <list>
+    <input-item 
+      data-field="userName"
+      value="{{userName}}"
+      placeholder="请输入用户名" >
+      用户名
+    </input-item>
+    <input-item 
+      data-field="email"
+      value="{{email}}"
+      placeholder="请输入邮箱" >
+      邮箱
+    </input-item>
+    <input-item
+      password 
+      data-field="psw"
+      value="{{psw}}"
+      placeholder="请输入密码" >
+      密码
+    </input-item>
+    <input-item 
+      password 
+      data-field="psw"
+      value="{{psw}}"
+      placeholder="请确认密码">
+      确认密码
+    </input-item>
+  </list>
+  <view class="notice-message">
+      <notice>因身份系统升级，请确认个人信息的真实性</notice>
+  </view>
+    <button size="default" type="primary" class="sbt">注册</button>
+    <button size="default" type="primary" class="sbt" onTap="onSubmit">前往登录</button>
+</view>
+</form>

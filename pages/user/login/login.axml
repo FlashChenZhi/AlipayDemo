@@ -1,0 +1,41 @@
+<form>
+  <view class="login">
+    <view style="margin-top:10px; text-align:center">
+    <view class="noticebar">欢迎进入登录页面</view>
+  </view>
+    <list>
+      <input-item
+        data-field="userName"
+        value="{{userName}}"
+        clear="{{true}}"
+        focus="{{inputFocus}}"
+        onInput="onItemInput"
+        onBlur="onItemBlur"
+        onFocus="onItemFocus"
+        onClear="onClear"
+        placeholder="请输入您的用户名">
+        用户名
+        <view slot="extra" class="extra" onTap="onExtraTap"></view>
+        </input-item>
+        <input-item
+          password
+          data-field="psw"
+          value="{{psw}}"
+          clear="{{true}}"
+          focus="{{inputFocus}}"
+          onInput="onItemInput"
+          onBlur="onItemBlur"
+          onFocus="onItemFocus"
+          onClear="onClear"
+          placeholder="请输入您的密码"
+        >密码
+         <view slot="extra" class="extra"></view>
+        </input-item>
+    </list>
+        <view class="reminder">
+          <navigator class="reminder-password" url="../resetPassword/resetPassword">忘记密码</navigator>
+          <navigator class="reminder-register" url="../register/register">立即注册</navigator>
+        </view> 
+        <button size="default" type="primary" class="sbt">登录</button>
+  </view>
+</form>

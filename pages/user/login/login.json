@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "用户登录",
+  "usingComponents": {
+    "list": "mini-antui/es/list/index",
+    "list-item": "mini-antui/es/list/list-item/index",
+    "input-item": "mini-antui/es/input-item/index"
+  }
+}

@@ -1,0 +1,26 @@
+.noticebar{
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.notice-message{
+  background-color: orangered;
+  margin-bottom: 10px;
+}
+
+.register{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.sbt{
+  display: block;
+  margin: 8px 0;
+  color: gray;
+  width: 80%;
+  /* font-style: 20px oblique red; */
+}

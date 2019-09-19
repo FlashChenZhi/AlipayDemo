@@ -1,0 +1,9 @@
+{
+  "defaultTitle": "用户注册",
+  "usingComponents": {
+    "input-item": "mini-antui/es/input-item/index",
+    "list": "mini-antui/es/list/index",
+    "list-item": "mini-antui/es/list/list-item/index",
+    "notice": "mini-antui/es/notice/index"
+  }
+}

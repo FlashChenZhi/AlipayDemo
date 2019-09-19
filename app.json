@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/login/login",
+    "pages/user/register/register",
+    "pages/user/resetPassword/resetPassword",
+    "pages/bankcard/bankcard"
+  ],
+  "window": {
+    "defaultTitle": "😄来一杯橙汁不要汁🍊"
+  }
+}
