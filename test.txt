@@ -1,31 +1,37 @@
-(1)201909181108
-    第一次Git本地分支合并代码到远程分支，并推送提交过程测试
-相关网址链接：https://blog.csdn.net/alex_sheng_sea/article/details/97921619
+(1)2019091913500001
+    Git本地和远程分支的创建，关联以及代码的提交合并操作指令：
+相关网址链接：https://www.jianshu.com/p/381cda0b1ccd
+
 相关操作步骤说明：
 1.查看一下本地分支
     git branch;
     查看本地和远程的所有分支
     git branch -a
 
-2.新建一个本地的分支
-    git branch -b newbranch   //这个命令是新建一个分支，并切换到该分支上去
+2.新建一个本地的分支<本地分支>
+    git checkout -b newbranch   //这个命令是新建一个分支，并切换到该分支上去
   （git branch newbranch;     git checkout newbranch）这两个命令合起来等同于上面的一个命令
 
-3.新建一个远程分支（同名字的远程分支）
-    git push origin newbranch:newbranch   //创建了一个远程分支名字叫 newbranch，origin为关键字
-
-4.切换本地分支并查看代码状态
+3.切换本地分支并查看代码状态
    git checkout '你需要提交代码的本地分支'
    git status
 
-5.将修改的代码提交到缓存区
+4.将修改的代码提交到缓存区
    git add . 
    git commit -m "你要写的注释" 
 
-6.拉取远程分支的最新代码
-   git pull
+5.本地分支关联到远程分支<本地分支>
+    git push origin newbranch:newbranch   //创建远程分支名称(后者)为 newbranch，origin为关键字
 
-7.把本地的新分支，和远程的新分支关联
-    git push --set-upstream origin newbranch
+6.切换到主分支(master)，并查看状态和拉取代码
+    git status  (查看状态)
+    git  pull	    (拉取代码)
+
+7.把本地分支代码合并到主分支上<master>
+    git merge 本地分支
+
+9.推送主分支代码到远程仓库保存<master>
+    git push 
+    
 
 
