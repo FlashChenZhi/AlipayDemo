@@ -1,4 +1,5 @@
 {
+  "defaultTitle": "首页",
   "usingComponents": {
     "input-item": "mini-antui/es/input-item/index",
     "list": "mini-antui/es/list/index",

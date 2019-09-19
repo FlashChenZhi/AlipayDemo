@@ -1,11 +1,14 @@
+var navBar=getApp();
+
 Page({
   data:{
+    tabbar:{},
     userName:'张三',
     psw:'123456',
     inputFocus:true
   },
   onLoad(){
-
+     navBar.editTabBar();
   },
   onShow(){
     

@@ -1,3 +1,5 @@
+@import "../../tabBar/tabBar.acss";
+
 .extra {
   /* background-image: url('https://gw.alipayobjects.com/zos/rmsportal/dOfSJfWQvYdvsZiJStvg.svg'); */
   background-size: contain;

@@ -1,0 +1,16 @@
+<template name="tabbar">
+    <view class="tabbar_box" 
+    style="background-color:{{tabbar.backgroundColor}}; 
+    border-top-color:{{tabbar.borderStyle}}; 
+    {{tabbar.position=='top'?'top:0':'bottom:0'}}">
+        <navigator class="tabbar_nav" openType="redirect" 
+          style="width:{{1/tabbar.items.length*100}}%; 
+                color:{{item.selected?tabbar.selectedColor:tabbar.textColor}}" 
+          url="{{item.pagePath}}" 
+          a:for="{{tabbar.items}}" a:key="index">
+          <image class="tabbar_icon" 
+                 src="{{item.selected?item.activeIcon:item.icon}}"></image>
+          <text>{{item.name}}</text>
+        </navigator>
+    </view>
+</template>

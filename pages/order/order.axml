@@ -1,0 +1,6 @@
+<view>
+   订单管理页面
+  <!-- 底部导航菜单栏 -->
+    <import src="../tabBar/tabBar.axml"></import>
+    <template is="tabbar" data="{{tabbar:tabbar}}"></template>
+</view>

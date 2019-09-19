@@ -3,7 +3,29 @@
   <view class="content">更多详情内容,请先
   <navigator url="../user/register/register">注册</navigator>或
   <navigator url="../user/login/login">登录</navigator>访问！</view>
-  <view class="advertisement">
-
+  <view>
+    <image mode="scaleToFill" class="advertisement" src="/images/worgsoft.jpg"/>
   </view>
+  <!-- 页面轮播组件 -->
+  <swiper previousMargin="10px"
+          nextMargin="10px"
+          indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}"
+          vertical="{{vertical}}"
+          interval="{{interval}}"
+          circular="{{circular}}">
+      <block a:for="{{src}}" a:key="index">
+        <swiper-item >
+          <image  class="swiper-item" 
+            data-name="{{atlas.text}}"
+            onTap="onTap"  mode="{{atlas.mode}}" 
+            src="{{src[index]}}" onError="imageError" onLoad="imageLoad" />  
+          <!-- <view style="background-color: {{item}};width:100%;height:300rpx"/> -->
+        </swiper-item>
+      </block>
+    </swiper>
+    <!-- 底部导航菜单栏 -->
+    <import src="../tabBar/tabBar.axml"></import>
+    <template is="tabbar" data="{{tabbar:tabbar}}"></template>
+
 </view>

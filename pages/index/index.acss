@@ -1,3 +1,4 @@
+@import "../tabBar/tabBar.acss";
 .title{
   text-align: center;
   font-weight: 500;
@@ -13,6 +14,19 @@ navigator{
   background-color: blue;
   text-decoration:underline; 
 }
-.advertisement{
-
+.page-top-picture {
+  display: flex;
+  justify-content: space-around;
 }
+.swiper-item {
+  display: block;
+  background-color: gray;
+  height: 100px;
+  margin:10px;
+}
+.advertisement{
+  height: 50px;
+  width: 100%;
+  background-color: cadetblue;
+}
+

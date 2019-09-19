@@ -37,4 +37,7 @@
     <button size="default" type="primary" class="sbt">注册</button>
     <button size="default" type="primary" class="sbt" onTap="onSubmit">前往登录</button>
 </view>
+  <!-- 底部导航菜单栏 -->
+    <import src="../../tabBar/tabBar.axml"></import>
+    <template is="tabbar" data="{{tabbar:tabbar}}"></template>
 </form>

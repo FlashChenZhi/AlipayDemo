@@ -4,6 +4,9 @@
     "pages/user/login/login",
     "pages/user/register/register",
     "pages/user/resetPassword/resetPassword",
+    "pages/catalog/catalog",
+    "pages/store/store",
+    "pages/order/order",
     "pages/bankcard/bankcard"
   ],
   "window": {
